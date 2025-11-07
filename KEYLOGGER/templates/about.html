@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="about-section">
+    <h1>Om Mig</h1>
+    <div class="about-content">
+        <div class="about-text">
+            <p>Jag är en passionerad Python-utvecklare som älskar att skapa smarta lösningar.</p>
+            <p>Med erfarenhet inom Flask, webbutveckling och databashantering strävar jag efter att skriva clean och effektiv kod.</p>
+        </div>
+        
+        <div class="skills">
+            <h2>Mina Färdigheter</h2>
+            {% for skill in skills %}
+            <div class="skill-item">
+                <span class="skill-name">{{ skill.name }}</span>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: {{ skill.level }}%"></div>
+                </div>
+                <span class="skill-percent">{{ skill.level }}%</span>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-content">
+        <h1>Hej, jag är <span class="highlight">Python Utvecklare</span></h1>
+        <p>Jag skapar fantastiska webbapplikationer med Python och Flask</p>
+        <div class="hero-buttons">
+            <a href="{{ url_for('projects') }}" class="btn btn-primary">Se Mina Projekt</a>
+            <a href="{{ url_for('contact') }}" class="btn btn-secondary">Kontakta Mig</a>
+        </div>
+    </div>
+</section>
+
+<section class="features">
+    <div class="feature-grid">
+        <div class="feature-card">
+            <h3>🚀 Moderna Webbappar</h3>
+            <p>Skapar responsiva och snabba webbapplikationer</p>
+        </div>
+        <div class="feature-card">
+            <h3>🔧 Python Expert</h3>
+            <p>Specialiserad på backend utveckling med Python</p>
+        </div>
+        <div class="feature-card">
+            <h3>💡 Kreativa Lösningar</h3>
+            <p>Löser komplexa problem med enkla lösningar</p>
+        </div>
+    </div>
+</section>
+{% endblock %}
